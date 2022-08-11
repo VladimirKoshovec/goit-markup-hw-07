@@ -8,7 +8,6 @@ $whiteop:rgba(255, 255, 255, 0.6);
 $dbgcolorblack:#2F303A;
 $dbgcolorgray:#F5F4FA;
 $iconfill: #AFB1B8;
-$portfolio-gap: 30px;
 $button-focus: #188CE8;
 
 // fonts
@@ -18,16 +17,19 @@ $secondary-font: Raleway, sans-serif;
 // transitions
 $transitoin-property: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-:root{
-    --brandblack: #000000;
-    --blacknav: #212121;
-    --brandblue:#2196F3;
-    --brandgray: #757575;
-    --brandwhite:#FFFFFF;
-    --whiteop:rgba(255, 255, 255, 0.6);
-    --dbgcolorblack:#2F303A;
-    --dbgcolorgray:#F5F4FA;
-    --iconfill: #AFB1B8;
+// gap
+$portfolio-gap: 30px;
 
-    --portfolio-gap: 30px;
-}
+// :root{
+//     --brandblack: #000000;
+//     --blacknav: #212121;
+//     --brandblue:#2196F3;
+//     --brandgray: #757575;
+//     --brandwhite:#FFFFFF;
+//     --whiteop:rgba(255, 255, 255, 0.6);
+//     --dbgcolorblack:#2F303A;
+//     --dbgcolorgray:#F5F4FA;
+//     --iconfill: #AFB1B8;
+
+//     --portfolio-gap: 30px;
+// }

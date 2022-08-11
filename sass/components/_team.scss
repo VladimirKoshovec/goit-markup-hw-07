@@ -1,5 +1,5 @@
 .team{
-    background-color: var(--dbgcolorgray);
+    background-color: $dbgcolorgray;
 
     &-list{
         margin: 0;
@@ -10,7 +10,7 @@
     }
 
     &-card{
-        background-color: var(--brandwhite);
+        background-color: $brandwhite;
       
         display: block;
         max-width: 270px;
@@ -31,7 +31,7 @@
             font-size: 16px;
             line-height: 1.188;
             text-align: center;
-            color: var(--blacknav);
+            color: $blacknav;
             letter-spacing: 0.03em;
             
             margin: 0px;
