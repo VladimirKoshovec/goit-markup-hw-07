@@ -4,15 +4,12 @@
 
 /*all visible site section h2 decoration*/
 
-
 /*all list decoration*/
 .listnone {
        list-style: none;
        margin-left: 0;
        padding: 0;
 }
-
-
 .hidden{
     
     width: 1px; 
@@ -25,12 +22,8 @@
     clip: rect(0 0 0 0); 
     overflow: hidden; 
 }
-
-
 /*---------------------------ONTAINER----------------------*/
-
 /*---------------------------/GLOBAL----------------------*/
-
 body {
     font-family: Roboto, sans-serif;
     color: var(--brandgray);
@@ -277,186 +270,22 @@ body {
 .form-btn:hover{
     background-color:#188CE8;
 }
-    
-
 /* ---------------------/FORM-------------------------- */
-
 /*----------------------/backdrope----------------------*/
-
 /*---------------------------HEADER----------------------*/
-
-.pagehader{
-    
-    border-bottom: 1px solid #ECECEC;
-    padding-top:24px;
-    padding-bottom: 25px;
-} 
-
-.hader-nav {
-    display: flex;
-    align-items: center;
-}
-
-.menu{
-    display: flex;
-    align-items: center;
-}
-
 /*-----------Logo------------*/
-
-.nav-logo{
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    color: var(--brandblack);
-    text-decoration: none;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
-
-.nav-logo span{
-    color:var(--brandblue)
-}
-
-/*nav*/
-
-.nav-main{
-    font-weight: 500;
-
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 93px;
-}
-
-.nav-main > .nav-item:not(:last-child){
-    margin-right: 50px;
-}
-
-.nav-adres{
-    font-weight: 500;
-
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    margin-left: auto;
-}
-
-.nav-adres>.nav-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-
-.nav-main .link{
-    text-decoration: none;
-    color: var(--blacknav);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.nav-adres .link{
-    text-decoration: none;
-    color: var(--brandgray);
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-}
-
-.email{
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.phone{
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.link{
-    position: relative;
-    display: flex;
-    align-items: center;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.active-page > .link::after{
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--brandblue);
-    bottom: -33px;
-
-}
-
-
-.link:hover, .link:focus{
-
-    color: var(--brandblue);  
-}
-
 /*---------------------------/HEADER----------------------*/
-
 /*---------------------------MAIN----------------------*/
-
 /*---------------------------HERO----------------------*/
-
 /*---------------------------/HERO----------------------*/
-
 /*principles*/
-
 /*-------------------------specialization------------------------*/
-
-/*------------------------/specialization------------------------*/
-
+/*------
 /*------------------------team------------------------------------*/
 /*------------------------/team------------------------------------*/
 /*------------------------clients------------------------------------*/
-.clients-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    margin: 0px;
-    padding: 0px;
-}
-
-.client-card:not(:last-child){
-    margin-right: 30px;
-}
-
-.client-nav{
-    display: flex;
-    width: 170px;
-    height: 92px;
-    border-radius: 4px;
-    
-    color: var(--iconfill);
-    border: 1px solid var(--iconfill);
-
-    justify-content: center;
-    align-items: center;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client-icon{
-    fill: currentColor; 
-}
-
-.client-nav:hover, .client-nav:focus{
-    color: var(--brandblue);
-    border-color: var(--brandblue);
-}
 /*------------------------/clients------------------------------------*/
-
 /*-------------------------PORTFOLIO.HTML------------------------*/
-
 /*-------------------------portfolio-filter----------------------*/
 .portfolio-title{
    

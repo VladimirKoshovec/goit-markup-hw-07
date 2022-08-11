@@ -1,0 +1,72 @@
+.pagehader{  
+    border-bottom: 1px solid #ECECEC;
+    padding-top:24px;
+    padding-bottom: 25px;
+
+    &-nav {
+        display: flex;
+        align-items: center;
+
+        &-main{
+            display: flex;
+            align-items: center;
+        }
+    
+        &-adres{
+            font-weight: 500;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            margin-left: auto;
+        }
+
+        &-item:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        &-link{
+            text-decoration: none;
+            color: $brandgray;
+            font-size: 14px;
+            line-height: 1.15;
+            letter-spacing: 0.02em;
+        
+            position: relative;
+            display: flex;
+            align-items: center;
+        
+            transition: color $transitoin-property;
+
+            &:hover, &:focus{
+                color: $brandblue;  
+            }
+        }
+    }
+
+    &-email{
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    
+    &-phone{
+        fill: currentColor;
+        margin-right: 10px;
+    }
+
+
+// logo
+    &-logo{
+        font-family: Raleway, sans-serif;
+        font-weight: 700;
+        color: $brandblack;
+        text-decoration: none;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+
+        &-part{
+            color:$brandblue;
+        }
+    }
+    
+} 
