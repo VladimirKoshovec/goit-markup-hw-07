@@ -1,6 +1,6 @@
 .clients{
 
-   &-list{
+   &__list{
        display: flex;
        justify-content: center;
        align-items: center;
@@ -9,11 +9,11 @@
        padding: 0px;
     }
 
-    &-card:not(:last-child){
+    &__card:not(:last-child){
        margin-right: 30px;
     }
 
-    &-nav{
+    &__nav{
         display: flex;
         width: 170px;
         height: 92px;
@@ -34,7 +34,7 @@
         }
     }
     
-    &-icon{
+    &__icon{
         fill: currentColor; 
     }
 

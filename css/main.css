@@ -3,7 +3,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section-title {
+.section__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -66,13 +66,13 @@ body {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrope.is-hidden {
+.backdrope--hidden {
   pointer-events: none;
   opacity: 0;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.backdrope-close-button {
+.backdrope__closebutton {
   position: absolute;
   cursor: pointer;
   width: 30px;
@@ -95,7 +95,7 @@ body {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrope-close-button:hover, .backdrope-close-button:focus {
+.backdrope__closebutton:hover, .backdrope__closebutton:focus {
   fill: #2196F3;
 }
 
@@ -108,7 +108,7 @@ body {
   border-radius: 4px;
   padding: 40px;
 }
-.mainform-caption {
+.mainform__caption {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -118,13 +118,13 @@ body {
   margin: 0;
   margin-bottom: 12px;
 }
-.mainform-inputarea {
+.mainform__inputarea {
   display: block;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.mainform-input {
+.mainform__input {
   width: 100%;
   height: 40px;
   padding: 11px;
@@ -135,10 +135,10 @@ body {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mainform-input-cover {
+.mainform__inputcover {
   position: relative;
 }
-.mainform-input-icon {
+.mainform__inputicon {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
@@ -146,12 +146,12 @@ body {
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.mainform-input:focus, .mainform-input:focus + .mainform-input-icon {
+.mainform__input:focus, .mainform__input:focus + .mainform__inputicon {
   fill: #2196F3;
   border-color: #2196F3;
   outline: none;
 }
-.mainform-label {
+.mainform__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -454,7 +454,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-title {
+.hero__title {
   color: #FFFFFF;
   font-weight: 900;
   font-size: 44px;
@@ -468,7 +468,7 @@ body {
   margin-bottom: 30px;
   max-width: 696px;
 }
-.hero-button {
+.hero__button {
   cursor: pointer;
   background: #2196F3;
   color: #FFFFFF;
@@ -487,7 +487,7 @@ body {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   background-color: #188CE8;
 }
 
@@ -634,7 +634,7 @@ body {
   margin-bottom: 16px;
 }
 
-.clients-list {
+.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,10 +647,10 @@ body {
   margin: 0px;
   padding: 0px;
 }
-.clients-card:not(:last-child) {
+.clients__card:not(:last-child) {
   margin-right: 30px;
 }
-.clients-nav {
+.clients__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,11 +668,11 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-nav:hover, .clients-nav:focus {
+.clients__nav:hover, .clients__nav:focus {
   color: #2196F3;
   border-color: #2196F3;
 }
-.clients-icon {
+.clients__icon {
   fill: currentColor;
 }
 

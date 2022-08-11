@@ -13,13 +13,13 @@
     transition: transform $transitoin-property,
     opacity $transitoin-property;
 
-    &.is-hidden {
+    &--hidden {
         pointer-events: none;
         opacity: 0;
         transform: scale(1.2);
     }
 
-    &-close-button{
+    &__closebutton{
 
         position: absolute;
         cursor: pointer;
@@ -43,6 +43,5 @@
         &:focus{
         fill: $brandblue;
 }
-    
     }
 }

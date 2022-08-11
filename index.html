@@ -18,43 +18,43 @@
 </head>
 
 <body>
-    <div class="backdrope is-hidden" data-modal>
+    <div class="backdrope backdrope--hidden" data-modal>
         
     <form name="main-from" class="mainform">
 
-        <button type="button" class="backdrope-close-button" data-modal-close>
-            <svg class="backdrope-close-svg" width="18px" height="18px">
+        <button type="button" class="backdrope__closebutton" data-modal-close>
+            <svg width="18px" height="18px">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
         
 
-        <p class="mainform-caption">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="mainform__caption">Оставьте свои данные, мы вам перезвоним</p>
           
-        <ul class="mainform-inputarea">
+        <ul class="mainform__inputarea">
             <li>
-                <label for="name" class="mainform-label">Имя</label>
-                <div class="mainform-input-cover">
-                    <input type="text" name="name" id="name" class="mainform-input">
-                    <svg width="18px" height="18px" class="mainform-input-icon"><use href="./images/icons.svg#icon-person"></use></svg>
+                <label for="name" class="mainform__label">Имя</label>
+                <div class="mainform__inputcover">
+                    <input type="text" name="name" id="name" class="mainform__input">
+                    <svg width="18px" height="18px" class="mainform__inputicon"><use href="./images/icons.svg#icon-person"></use></svg>
                 </div>    
             </li>
             <li>
-                <label for="telephone" class="mainform-label">Телефон</label>
-                <div class="mainform-input-cover">
-                     <input type="tel" name="telephone" id="telephone" class="mainform-input">
-                     <svg width="18px" height="18px" class="mainform-input-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
+                <label for="telephone" class="mainform__label">Телефон</label>
+                <div class="mainform__inputcover">
+                     <input type="tel" name="telephone" id="telephone" class="mainform__input">
+                     <svg width="18px" height="18px" class="mainform__inputicon"><use href="./images/icons.svg#icon-phone"></use></svg>
                 </div>
             </li>
             <li>
-                <label for="email" class="mainform-label">Почта</label>
-                <div class="mainform-input-cover">
-                    <input type="email" name="email" id="email" class="mainform-input">
-                    <svg width="18px" height="18px" class="mainform-input-icon"><use href="./images/icons.svg#icon-email"></use></svg>
+                <label for="email" class="mainform__label">Почта</label>
+                <div class="mainform__inputcover">
+                    <input type="email" name="email" id="email" class="mainform__input">
+                    <svg width="18px" height="18px" class="mainform__inputicon"><use href="./images/icons.svg#icon-email"></use></svg>
                 </div>
             </li>
             <li>
-                <label for="comment" class="mainform-label">Комментарий</label>
+                <label for="comment" class="mainform__label">Комментарий</label>
                 <textarea name="email" id="comment" class="mainform-comment" placeholder="Введите текст"></textarea>
             </li>
         </ul>
@@ -106,8 +106,8 @@
     <main>
         <!--hero-->
         <section class="hero">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
         </section>
 
         <!--principles-->
@@ -163,7 +163,7 @@
         <!--specialization-->
         <section class="section specialization">
             <div class="container">
-                <h2 class="section-title">Чем мы занимаемся</h2>
+                <h2 class="section__title">Чем мы занимаемся</h2>
                 <ul class="specialization-list listnone">
                     <li class="specialization-item">
                         <a href="" class="specialization-link">
@@ -315,48 +315,49 @@
                 </ul>
             </div>
         </section>
+        <!-- clients -->
         <section class="clients section">
             <div class="container">
-                <h2 class="section-title">Постоянные клиенты</h2>
-                <ul class="clients-list listnone">
-                    <li class="clients-card">
-                        <a href="" class="clients-nav">
-                        <svg width="41" height="47" class="clients-icon">
+                <h2 class="section__title">Постоянные клиенты</h2>
+                <ul class="clients__list listnone">
+                    <li class="clients__card">
+                        <a href="" class="clients__nav">
+                        <svg width="41" height="47" class="clients__icon">
                             <use href="./images/icons.svg#icon-klient-first"></use>
                         </svg>
                         </a>
                     </li>
-                    <li class="clients-card">
-                        <a href="" class="clients-nav">
-                            <svg width="40" height="52" class="clients-icon">
+                    <li class="clients__card">
+                        <a href="" class="clients__nav">
+                            <svg width="40" height="52" class="clients__icon">
                                 <use href="./images/icons.svg#icon-klient-second"></use>
                             </svg>
                             </a>
                     </li>
-                    <li class="clients-card">
-                        <a href="" class="clients-nav">
-                            <svg width="43" height="41" class="clients-icon">
+                    <li class="clients__card">
+                        <a href="" class="clients__nav">
+                            <svg width="43" height="41" class="clients__icon">
                                 <use href="./images/icons.svg#icon-klient-third"></use>
                             </svg>
                             </a>
                     </li>
-                    <li class="clients-card">
-                        <a href="" class="clients-nav">
-                            <svg width="84" height="41" class="clients-icon">
+                    <li class="clients__card">
+                        <a href="" class="clients__nav">
+                            <svg width="84" height="41" class="clients__icon">
                                 <use href="./images/icons.svg#icon-klient-fourth"></use>
                             </svg>
                             </a>
                     </li>
-                    <li class="clients-card">
-                        <a href="" class="clients-nav">
-                            <svg width="62" height="45" class="clients-icon">
+                    <li class="clients__card">
+                        <a href="" class="clients__nav">
+                            <svg width="62" height="45" class="clients__icon">
                                 <use href="./images/icons.svg#icon-klient-fifth"></use>
                             </svg>
                             </a>
                     </li>
-                    <li class="clients-card">
-                        <a href="" class="clients-nav">
-                            <svg width="94" height="44" class="clients-icon">
+                    <li class="clients__card">
+                        <a href="" class="clients__nav">
+                            <svg width="94" height="44" class="clients__icon">
                                 <use href="./images/icons.svg#icon-klient-sixth"></use>
                             </svg>
                             </a>
