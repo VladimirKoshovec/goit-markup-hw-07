@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--dbgcolorblack);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-socillinks{
+        margin-top: 12px;
+        margin-left: 70px;
+
+        &-title{
+            margin: 0px;
+            padding: 0px;
+        
+            text-transform: uppercase;
+            font-weight: 700px;
+            font-size: 14px;
+            color: var(--brandwhite);
+            margin-bottom: 20px;
+            
+        }
+    }
+
+    &-socillink{
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $brandwhite;
+    }
+
+    &-columns{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

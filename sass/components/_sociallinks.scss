@@ -1,0 +1,42 @@
+.sociallinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+    padding: 0px;
+
+    &-item:not(:last-child){
+        margin-right: 10px;
+    }
+
+    &-link{
+        display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: inherit;
+           
+        color: var(--iconfill);
+        
+        justify-content: center;
+        align-items: center;
+    
+        transition: color $transitoin-property,
+        background-color $transitoin-property;
+        
+        &:hover, &:focus{
+            background-color: $brandblue;
+            color: $brandwhite;
+        }
+    }
+
+    &-icon{
+        width: 20px;
+        height: 20px;
+        fill: currentColor;
+    }
+}
+
+
+
