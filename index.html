@@ -20,54 +20,55 @@
 <body>
     <div class="backdrope is-hidden" data-modal>
         
-    <form name="main-from" class="backdrope-form">
+    <form name="main-from" class="mainform">
 
         <button type="button" class="backdrope-close-button" data-modal-close>
             <svg class="backdrope-close-svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+        
 
-        <p class="form-caption">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="mainform-caption">Оставьте свои данные, мы вам перезвоним</p>
           
-        <ul class="input-area">
+        <ul class="mainform-inputarea">
             <li>
-                <label for="name" class="form-label input-cover">Имя</label>
-                <div class="input-cover">
-                    <input type="text" name="name" id="name" class="form-field">
-                    <svg width="18px" height="18px" class="form-field-icon"><use href="./images/icons.svg#icon-person"></use></svg>
+                <label for="name" class="mainform-label">Имя</label>
+                <div class="mainform-input-cover">
+                    <input type="text" name="name" id="name" class="mainform-input">
+                    <svg width="18px" height="18px" class="mainform-input-icon"><use href="./images/icons.svg#icon-person"></use></svg>
                 </div>    
             </li>
             <li>
-                <label for="telephone" class="form-label">Телефон</label>
-                <div class="input-cover">
-                     <input type="tel" name="telephone" id="telephone" class="form-field">
-                     <svg width="18px" height="18px" class="form-field-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
+                <label for="telephone" class="mainform-label">Телефон</label>
+                <div class="mainform-input-cover">
+                     <input type="tel" name="telephone" id="telephone" class="mainform-input">
+                     <svg width="18px" height="18px" class="mainform-input-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
                 </div>
             </li>
             <li>
-                <label for="email" class="form-label">Почта</label>
-                <div class="input-cover">
-                    <input type="email" name="email" id="email" class="form-field">
-                    <svg width="18px" height="18px" class="form-field-icon"><use href="./images/icons.svg#icon-email"></use></svg>
+                <label for="email" class="mainform-label">Почта</label>
+                <div class="mainform-input-cover">
+                    <input type="email" name="email" id="email" class="mainform-input">
+                    <svg width="18px" height="18px" class="mainform-input-icon"><use href="./images/icons.svg#icon-email"></use></svg>
                 </div>
             </li>
             <li>
-                <label for="comment" class="form-label">Комментарий</label>
-                <textarea name="email" id="comment" class="form-comment" placeholder="Введите текст"></textarea>
+                <label for="comment" class="mainform-label">Комментарий</label>
+                <textarea name="email" id="comment" class="mainform-comment" placeholder="Введите текст"></textarea>
             </li>
         </ul>
 
-          <div class="checkbox-group">
-            <label for="contract-agree" class="form-chek-label">
-                <input type="checkbox" name="contract" id="contract-agree" class="form-check-box">
-                <span class="checkbox-icon"></span>
+          <div class="mainform-checkbox-group">
+            <label for="contract-agree" class="mainform-check-label">
+                <input type="checkbox" name="contract" id="contract-agree" class="mainform-checkbox">
+                <span class="mainform-checkbox-icon"></span>
                 Соглашаюсь с рассылкой и принимаю 
-                &nbsp;<a href="#" class="checkbox-link">Условия договора</a>
+                &nbsp;<a href="#" class="mainform-checkbox-link">Условия договора</a>
             </label>
           </div>
 
-          <button type="submit" class="form-btn">Отправить</button>
+          <button type="submit" class="mainform-button">Отправить</button>
     </form>
 
     </div>
