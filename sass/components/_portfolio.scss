@@ -1,6 +1,6 @@
 .portfolio{
 
-    &-title{
+    &__title{
    
         width: 1px; 
         height: 1px; 
@@ -13,45 +13,7 @@
         overflow: hidden;   
     } 
 
-    &-filter{
-        display: flex;
-        margin: 0px;
-        padding: 0px;
-        margin-bottom: 50px;
-        justify-content: center;
-
-        &-item:not(:last-child){
-            margin-right: 8px;
-        }
-
-        &-button {
-            cursor: pointer;
-            font-family: Roboto, sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.625;
-            text-align: center;
-            color: $blacknav;
-            background: $dbgcolorgray;
-            letter-spacing: 0.03em;
-        
-            display: block;
-            border-radius: 4px;
-            padding: 6px 22px 6px 22px;
-            border: none;
-        
-            transition: color $transitoin-property,
-            background $transitoin-property;
-
-            &:hover,
-            &:focus {
-                color: $brandwhite;
-                background: $brandblue;
-            }
-        }
-    }
-
-    &-list{
+    &__list{
         margin: 0px;
         padding: 0px;
     
@@ -61,8 +23,8 @@
         margin-left: calc(-1 * $portfolio-gap);
         margin-top: calc(-1 * $portfolio-gap);
     }
-
-    &-item{
+}
+.companycard{
         flex-basis: calc(100% / 3 - $portfolio-gap);
         margin-left: $portfolio-gap;
         margin-top: $portfolio-gap;
@@ -75,7 +37,7 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
         }
 
-        &-border{
+        &__border{
 
             border: 1px solid #EEEEEE;
             padding-top: 20px;
@@ -84,7 +46,7 @@
             padding-bottom: 20px;
         }
 
-        &-title{
+        &__title{
             font-weight: 700;
             font-size: 18px;
             line-height: 2;
@@ -97,7 +59,7 @@
             margin-bottom: 4px; 
         }
         
-        &-deskr{
+        &__deskr{
             font-size: 16px;
             line-height: 1.875;
             letter-spacing: 0.03em;
@@ -105,9 +67,9 @@
             padding: 0px;
             margin: 0px;
         }
-    }
 
-    &-thumb{
+
+    &__thumb{
         display: block;
         position: relative;
         overflow: hidden;
@@ -138,9 +100,47 @@
         }
     } 
 
-    &-img{
+    &__img{
         display: block;
         max-width: 100%;
         height: auto;
     }
 }
+
+.filter{
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+        margin-bottom: 50px;
+        justify-content: center;
+
+        &__item:not(:last-child){
+            margin-right: 8px;
+        }
+
+        &__button {
+            cursor: pointer;
+            font-family: Roboto, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.625;
+            text-align: center;
+            color: $blacknav;
+            background: $dbgcolorgray;
+            letter-spacing: 0.03em;
+        
+            display: block;
+            border-radius: 4px;
+            padding: 6px 22px 6px 22px;
+            border: none;
+        
+            transition: color $transitoin-property,
+            background $transitoin-property;
+
+            &:hover,
+            &:focus {
+                color: $brandwhite;
+                background: $brandblue;
+            }        
+        }
+}    

@@ -1,15 +1,15 @@
 .specialization{
     padding-top: 47px;
 
-    &-img{
+    &__img{
         display: block;
     }
 
-    &-thumb{
+    &__thumb{
         position: relative;
     }
 
-    &-thumb-overlay{
+    &__thumb-overlay{
         position: absolute;
         
         display: flex;
@@ -32,13 +32,13 @@
         bottom: 0; 
     }
 
-    &-list{
+    &__list{
         display: flex;
         margin: 0px;
         padding: 0px;
     }
 
-    &-item:not(:last-child) {
+    &__item:not(:last-child) {
         margin-right: 30px;
     }
 }

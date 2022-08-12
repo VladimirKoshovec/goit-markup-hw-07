@@ -5,11 +5,11 @@
     padding: 0px;
     margin-left: 93px;
 
-    &-item:not(:last-child){
+    &__item:not(:last-child){
         margin-right: 50px;
     }
 
-    &-link{
+    &__link{
         text-decoration: none;
         color: $blacknav;
         font-size: 14px;

@@ -1,25 +1,25 @@
 .principles {
     padding-bottom: 47px;
 
-    &-list{
+    &__list{
         display: flex;
         margin: 0px;
         padding: 0px;
     }
 
-    &-item{
+    &__item{
         max-width: 270px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
     }
 
-    &-item:not(:last-child) {
-        margin-right: 30px;
-    }
-
-    &-icon{
+    &__icon{
         fill: $blacknav;
     }
 
-    &-thumb{
+    &__thumb{
         display: flex;
         width: 270px;
         height: 120px;
@@ -31,7 +31,7 @@
         align-items: center;
     }
 
-    &-head{
+    &__title{
         color: $blacknav;
         font-weight: 700;
         font-size: 14px;
@@ -43,7 +43,7 @@
         padding: 0px;
     }
 
-    &-deskrp{
+    &__deskrp{
         font-size: 14px;
     
         line-height: 1.714;

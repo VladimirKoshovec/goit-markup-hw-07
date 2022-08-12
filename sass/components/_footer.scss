@@ -3,23 +3,39 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    &-socillinks{
-        margin-top: 12px;
-        margin-left: 70px;
-
-        &-title{
-            margin: 0px;
-            padding: 0px;
-        
-            text-transform: uppercase;
-            font-weight: 700px;
-            font-size: 14px;
-            color: $brandwhite;
-            margin-bottom: 20px;
-        }
+    &__columns{
+        display: flex;
+        justify-content: space-evenly;
     }
 
-    &-link{
+    &__logo{
+        color: $brandwhite;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__socillinks{
+        margin-top: 12px;
+        margin-left: 70px;
+    }
+
+    &__socillink{
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $brandwhite;
+    }
+
+    &__title{
+        margin: 0px;
+        padding: 0px;
+    
+        text-transform: uppercase;
+        font-weight: 700px;
+        font-size: 14px;
+        color: $brandwhite;
+        margin-bottom: 20px;
+    }
+
+    &__link{
         text-decoration: none;
         font-style: normal;
         font-size: 14px;
@@ -34,7 +50,7 @@
         }
         }
 
-    &-adress {
+    &__adress {
         text-decoration: none;
         font-style: normal;
         font-size: 14px;
@@ -50,56 +66,21 @@
         }
 
 
-    &-list{
+    &__list{
         margin: 0px;
         padding: 0px;
     }
 
-    &-item:not(:last-child){
+    &__item:not(:last-child){
         display:block;
         margin-bottom: 9px;
     }
-
-    &-socillink{
-        background-color: rgba(255, 255, 255, 0.1);
-        color: $brandwhite;
-    }
-
-    &-columns{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    &-logo{
-        font-family: Raleway, sans-serif;
-        font-weight: 700;
-        color: $brandwhite;
-        text-decoration: none;
-        font-size: 26px;
-        line-height: 1.2;
-        letter-spacing: 0.03em;
-        
-        display: block;
-        margin-bottom: 20px;
-
-        &-part{
-            color: $brandblue;
-        }
-    }
-}
-
-// form in footer
-.footer-form{
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-
-    &-container{
+    &__form{
         margin-top: 12px;
         margin-left: 93px;
     }
 
-    &-caption{
+    &__caption{
         margin: 0;
         padding: 0;
         text-transform: uppercase;
@@ -110,8 +91,16 @@
         
         padding-bottom: 20px;
     }
+}
 
-    &-mail{
+// form in footer
+.form{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+
+    &__mail{
         height: 50px;
         width: 358px;
         background-color: inherit;
@@ -130,45 +119,42 @@
             color: rgba(255, 255, 255, 0.3);
         }
     }
+}
 
-    &-button
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        width: 200px;
-        height: 50px;
-        background-color: $brandblue;
-        border-radius: 4px;
-        border: none;
+    width: 200px;
+    height: 50px;
+    background-color: $brandblue;
+    border-radius: 4px;
+    border: none;
+
+    cursor: pointer;
+
+    transition: background-color $transitoin-property;
+
+    &__text{
+        color: $brandwhite;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
     
-        cursor: pointer;
-
-        transition: background-color $transitoin-property;
-
-        &-text{
-            color: $brandwhite;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.88;
-            letter-spacing: 0.06em;
-        
-            margin: 0;
-            padding: 0;
-            margin-right: 10px;
-        
-        }
-        
-        &-icon{
-            fill: $brandwhite;
-        }
-
-        &:focus, 
-        &:hover{
-            background-color:$button-focus;
-        }
+        margin: 0;
+        padding: 0;
+        margin-right: 10px;
+    
+    }
+    
+    &__icon{
+        fill: $brandwhite;
     }
 
-    
+    &:focus, 
+    &:hover{
+        background-color:$button-focus;
+    }
 }

@@ -73,7 +73,7 @@
         letter-spacing: 0.01em;
     }
     
-    &-comment{
+    &__comment{
         height: 120px;
         resize: none;
         width: 100%;
@@ -99,60 +99,7 @@
         }
     }
 
-    &-check-label{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-        cursor: pointer;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: #757575;
-        margin: 0;
-        padding: 0;
-    }
-
-    &-checkbox-group{
-        margin-bottom: 30px;
-    }
-
-    &-checkbox{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        position: absolute;
-
-        &-icon{
-            display: block;
-            margin-right: 7px;
-        
-            border: 2px solid $blacknav;
-            width: 16px;
-            height: 15px;
-            border-radius: 2px;
-            cursor: pointer;
-        
-            transition: background-color $transitoin-property,
-            border-color $transitoin-property;
-        }
-
-        &:checked + &-icon{
-            background-image: url(../images/icon-checked.svg);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            
-            background-color: $brandblue;
-            border-color: $brandblue;
-        }
-
-        &-link {
-            color: $brandblue;
-        }
-    }
-
-    &-button{
+    &__button{
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -179,4 +126,60 @@
         background-color: $button-focus;
         }
     }
+
+
+.checkbox{
+        margin-bottom: 30px;
+
+        &__label{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+            color: #757575;
+            margin: 0;
+            padding: 0;
+        }
+
+        &__input{
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            position: absolute;
+
+            &:checked + .checkbox__icon{
+                background-image: url(../images/icon-checked.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                
+                background-color: $brandblue;
+                border-color: $brandblue;
+            }
+        }
+        &__icon{
+                display: block;
+                margin-right: 7px;
+            
+                border: 2px solid $blacknav;
+                width: 16px;
+                height: 15px;
+                border-radius: 2px;
+                cursor: pointer;
+            
+                transition: background-color $transitoin-property,
+                border-color $transitoin-property;
+        }
+    
+   
+        &__link {
+                color: $brandblue;
+        }
+        
+    }
+
 }
